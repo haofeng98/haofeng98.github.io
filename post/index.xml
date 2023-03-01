@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>https://haofeng98.github.io/post/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Mar 2023 22:06:18 +0800</lastBuildDate><atom:link href="https://haofeng98.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blogtest</title>
+      <link>https://haofeng98.github.io/post/blogtest/</link>
+      <pubDate>Wed, 01 Mar 2023 22:06:18 +0800</pubDate>
+      
+      <guid>https://haofeng98.github.io/post/blogtest/</guid>
+      <description>八大排序算法： 0. 概述分类 ![sort_coll](/Users/cheng/面试文稿/面经资料 - 副本/img/sort/sort_coll.png)
+时间复杂度分析：
+![sort_2](/Users/cheng/面试文稿/面经资料 - 副本/img/sort/sort_2.png)
+时间复杂度都是以2为底的log.
+1. 冒泡排序 O(n^2) O(1)稳定 基本思想：
+通过对待排序序列从前向后（从下标较小的元素开始）,依次比较相邻元素的值，若发现逆序则交换，使值较大的元素逐渐从前移向后部，就象水底下的气泡一样逐渐向上冒。
+算法过程：
+两个for循环，外层为一个大轮循环，循环范围为数组大小-1，下标从0开始；内层循环为小循环，循环范围为数组长度-大论数-1，下标从0开始。 总结：在每次的大循环中，都会找到一个本次循环中的最大值放到数组末尾，这些最大值就不再参与后面的排序。 算法优化：
+如果在一个内循环中，一次交换都没有发生，则可以直接break掉排序方法。 算法实现：
+public static void bubbleSort(int[] arr){ // 定义一个临时遍历,用于交换数据 int temp; // 标识变量,标识是否进行过排序 boolean flag = false; // 时间复杂度O(n^2) for(int i = 0 ; i &amp;lt; arr.length - 1; i++){ for (int j = 0; j &amp;lt; arr.length - i - 1; j++) { if(arr[j] &amp;gt; arr[j + 1]){ flag = true; // 发生了交换 temp = arr[j + 1]; arr[j + 1] = arr[j]; arr[j] = temp; } } if(!</description>
+    </item>
+    
+  </channel>
+</rss>
